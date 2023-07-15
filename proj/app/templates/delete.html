@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+   {% block content %}
+   <div class="form-group m-4">
+   <form method = "POST" action = "/delete/" >
+    {% csrf_token %}
+Name :<input type="text" name= "name" id="name">
+<button type="submit">Dammn Delete it...</button>
+</form>
+<script src="" async defer></script> 
+   {% endblock content %}    
+</html>

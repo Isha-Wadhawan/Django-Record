@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table table-bordered w-25 m-4 ">
+    <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+         {% for r in rec %}
+        <tr>
+          <td> {{r.name}} </td>
+          <td>{{r.age}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+         <a href =  "/delete/"><button type = "submit" class="btn btn-info m-4">DELETE</button></a>
+         <a href =  "/base/"><button type = "submit" class="btn btn-info m-4">ADD</button></a>
+        <script src="" async defer></script>
+
+{% endblock content %}
+       
